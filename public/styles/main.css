@@ -1,0 +1,123 @@
+/* Custom styles for the header */
+
+.navbar-brand {
+  padding-left: 50px;
+}
+
+.nav-link {
+  margin-left: 50px;
+  padding-right: 60px; /* Add margin between links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-weight: bold; /* Bold font weight */
+  text-decoration: none; /* Remove default underline */
+  color: #333; /* Text color */
+  position: relative; /* Add relative positioning */
+}
+
+.nav-link:before {
+  content: ""; /* Ad= -` content */
+  position: absolute; /* Absolute positioning */
+  bottom: -2px; /* Adjust vertical position */
+  left: 0; /* Align to the left edge of the link */
+  width: 100%; /* Full width */
+  height: 2px; /* Line height */
+  background-color: #bbb7a0; /* Line color */
+  transform: scaleX(0); /* Initial scale for animation */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+.navbar-nav {
+  padding-left: 590px;
+}
+.hero-body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.hero-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center; /* Center text */
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #f3f3f3; /* Beige color */
+  border-color: #f3f3f3; /* Beige color */
+  color: #212529; /* Text color */
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #e9e9e9; /* Lighter beige color on hover */
+  border-color: #e9e9e9; /* Lighter beige color on hover */
+  color: #212529; /* Text color */
+}
+
+.hero-buttons .btn-outline-primary {
+  border-color: #f3f3f3; /* Beige color */
+  color: #f3f3f3; /* Beige color */
+}
+
+.hero-buttons .btn-outline-primary:hover {
+  background-color: #f3f3f3; /* Beige color on hover */
+  color: #212529; /* Text color on hover */
+}
+
+.hero-image {
+  position: relative;
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.hero-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffc107;
+  width: 200px;
+  height: 200px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.display-4 {
+  font-family: "Kalnia", serif;
+  font-family: "Playfair Display", serif;
+  color: #007bff;
+  padding-bottom: 25px;
+}
+.lead {
+  color: rgb(175, 175, 175);
+}
+.featurette-divider {
+  border-top: 3px solid #6e7070;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  
+}

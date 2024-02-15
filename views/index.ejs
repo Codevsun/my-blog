@@ -1,63 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Include the header partial -->
-    <%- include('partials/header') %>
-    <!-- CSS Files -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Kalnia:wght@300;400&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body class="hero-body">
-    <!-- Your page content here -->
-    <!-- Hero Section -->
-    <section class="hero-content">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-7">
-            <div class="p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-              <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-                  Dive into a world where words dance and stories unfold
-                </h1>
-                <p class="lead">
-                  From thought-provoking essays to captivating narratives, we
-                  curate a tapestry of words that resonate with passion,
-                  curiosity, and creativity.
-                </p>
+<!-- Include the header partial -->
+<%- include('partials/header.ejs') %>
+<!-- Add any additional meta tags or stylesheets here -->
+
+<body class="hero-body">
+  <!-- Hero Section -->
+  <section class="hero-content">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-7">
+          <div class="p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
+            <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+                Dive into a world where words dance and stories unfold
+              </h1>
+              <p class="lead">
+                From thought-provoking essays to captivating narratives, we
+                curate a tapestry of words that resonate with passion,
+                curiosity, and creativity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="img/gb_-25.gif" alt="" width="430" />
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- features -->
+
+<section class="section-sm bg-light" id="features" style="font-family: Playfair Display, serif;">
+  <div class="container">
+    <hr class="featurette-divider" />
+    <div class="row align-items-center">
+
+      <div class="col-lg-5">
+        <div class="mt-4 p-4">
+          <img src="img/gb_-488-400x495.jpg" class="img-fluid rounded shadow-lg" alt="Feature Image">
+        </div>
+      </div>
+
+      <div class="col-lg-6 offset-lg-1">
+        <div class="mt-4">
+          <h2 class="fw-bold">Empowering Your Blogging Experience</h2>
+
+          <div class="mt-4 pt-3">
+            <div class="d-flex align-items-center">
+              <div class="features-icon me-4">
+                <img src="img/notes(1).png" class="img-fluid" alt="Writing Icon">
+              </div>
+              <div>
+                <h5 class="fw-bold">Creative Writing</h5>
+                <p class="text-muted mt-2">Unleash your creativity and express yourself through compelling blog posts and articles.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mt-4">
+              <div class="features-icon me-4">
+                <img src="img/technology.png" class="img-fluid" alt="Technology Icon">
+              </div>
+              <div>
+                <h5 class="fw-bold">Cutting-Edge Technology</h5>
+                <p class="text-muted mt-2">Explore the latest trends in technology and discover innovative tools to enhance your blogging journey.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="img/gb_-25.gif" alt="" width="430" />
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row align-items-center mt-5">
+
+      <div class="col-lg-6">
+        <div class="mt-4">
+          <h2 class="fw-bold">Expand Your Reach, Inspire Your Audience</h2>
+          <p class="text-muted mt-4">Connect with readers around the globe, share your insights, and inspire meaningful conversations.</p>
+
+          <div class="mt-4">
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="mdi mdi-check-bold text-primary me-2"></i>Engage with your audience through thought-provoking content.</li>
+              <li class="mb-2"><i class="mdi mdi-check-bold text-primary me-2"></i>Utilize advanced analytics to understand your readers' preferences.</li>
+              <li class="mb-2"><i class="mdi mdi-check-bold text-primary me-2"></i>Join a vibrant community of writers and enthusiasts.</li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <a href="#" class="read-more-link">Learn More</i></a>
           </div>
         </div>
-        <hr class="featurette-divider" />
       </div>
-    </section>
 
-    <!-- peaople's posts -->
+      <div class="col-lg-5 offset-lg-1">
+        <div class="mt-4 p-4">
+          <img src="img/gb_-429-400x421.jpg" class="img-fluid rounded shadow-lg" alt="Feature Image">
+        </div>
+      </div>
 
-    <!-- Include the footer partial -->
-    <%- include('partials/footer') %>
+    </div>
+  </div>
+</section>
 
-    <!-- Add any additional meta tags, stylesheets, or scripts here -->
-    <title>My Blog</title>
-  </body>
-</html>
+  <!-- latest posts posts -->
+  <section id="blogs" class="page-section">
+    <div class="mm2">
+      <div class="text-center">
+        
+      </div>
+      <div
+      class="container"
+      style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          "
+      >
+      <hr class="featurette-divider" />
+        <div class="row">
+          <div class="col-md-6 col-lg-4 fade-in-right">
+            <div class="tablet-lg-top-30">
+              <div class="card my-3">
+                <img class="img-fluid" src="img/cutecats.jpg" alt="" />
+                <div class="p-4">
+                  <h4 class="pb-2">Best design</h4>
+                  <div
+                    class="d-flex small pb-3 align-content-center text-body-tertiary"
+                  >
+                    <div class="pe-3 d-flex align-items-center">
+                      <i class="lni lni-bookmark pe-1"></i>
+                      <span>Design</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="lni lni-calendar pe-1"></i>
+                      <span>Jan 05, 2022</span>
+                    </div>
+                  </div>
+                  <p class="pb-3 text-black-50">
+                    Quisque sit amet urna et neque porttitor mattis varius
+                    natoque. Vestibulum quis elit a lacus varius pretium vitae
+                    ut odio dapibus ac sit amet.
+                  </p>
+                  <a href="#" class="read-more-link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in-right">
+            <div class="tablet-lg-top-30">
+              <div class="card my-3">
+                <img class="img-fluid" src="img/housecute.jpg" alt="" />
+                <div class="p-4">
+                  <h4 class="pb-2">How to draw</h4>
+                  <div
+                    class="d-flex small pb-3 align-content-center text-body-tertiary"
+                  >
+                    <div class="pe-3 d-flex align-items-center">
+                      <i class="lni lni-bookmark pe-1"></i>
+                      <span>Design</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="lni lni-calendar pe-1"></i>
+                      <span>Jan 05, 2022</span>
+                    </div>
+                  </div>
+                  <p class="pb-3 text-black-50">
+                    Quisque sit amet urna et neque porttitor mattis varius
+                    natoque. Vestibulum quis elit a lacus varius pretium vitae
+                    ut odio dapibus ac sit amet.
+                  </p>
+                  <a href="#" class="read-more-link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in-right">
+            <div class="tablet-lg-top-30">
+              <div class="card my-3">
+                <img class="img-fluid" src="img/cutecute.jpg" alt="" />
+                <div class="p-4">
+                  <h4 class="pb-2">Design Review</h4>
+                  <div
+                    class="d-flex small pb-3 align-content-center text-body-tertiary"
+                  >
+                    <div class="pe-3 d-flex align-items-center">
+                      <i class="lni lni-bookmark pe-1"></i>
+                      <span>Design</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="lni lni-calendar pe-1"></i>
+                      <span>Jan 05, 2022</span>
+                    </div>
+                  </div>
+                  <p class="pb-3 text-black-50">
+                    Quisque sit amet urna et neque porttitor mattis varius
+                    natoque. Vestibulum quis elit a lacus varius pretium vitae
+                    ut odio dapibus ac sit amet.
+                  </p>
+                  <a href="#" class="read-more-link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial  -->
+
+  <!-- Include the footer partial -->
+  <%- include('partials/footer.ejs') %>
+</body>

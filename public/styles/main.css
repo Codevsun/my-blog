@@ -30,38 +30,30 @@
   transform: scaleX(1); /* Scale to full width on hover */
 }
 .navbar-nav {
-  padding-left: 590px;
+  padding-left: 510px;
 }
 .hero-body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
-  color: #212529;
 }
 
 .hero-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center; /* Center text */
+  padding-top: 160px;
+  padding-bottom: 230px;
+  text-align: center;
+  font-family: "Kalnia", serif;
+  font-family: "Playfair Display", serif;
 }
 
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #007bff;
 }
 
 .hero-description {
   font-size: 1.5rem;
   margin-bottom: 30px;
-}
-
-.hero-buttons .btn {
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-right: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-buttons .btn-primary {
@@ -106,18 +98,128 @@
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.display-4 {
-  font-family: "Kalnia", serif;
-  font-family: "Playfair Display", serif;
-  color: #007bff;
-  padding-bottom: 25px;
-}
+
 .lead {
   color: rgb(175, 175, 175);
 }
 .featurette-divider {
-  border-top: 3px solid #6e7070;
-  margin-top: 80px;
+  border-top: 3px solid #d1c5c5;
+
   margin-bottom: 80px;
-  
 }
+.posts-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.posts-section .row {
+  flex-wrap: nowrap;
+}
+
+.posts-section .col-md-6 {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+#blogs {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+#blogs h3 {
+  font-family: "Playfair Display", serif; /* Use a modern font */
+}
+
+#blogs .card {
+  border: none; /* Remove card border */
+  background-color: #fff; /* White background for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+#blogs .card img {
+  border-radius: 8px 8px 0 0; /* Rounded corners for card image */
+}
+
+#blogs .card h4 {
+  font-weight: 600; /* Use semi-bold font weight */
+  color: #333; /* Dark text color */
+}
+
+#blogs .card .text-body-tertiary {
+  color: #777; /* Lighter text color */
+}
+
+#blogs .card .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+#blogs .card {
+  border: none; /* Remove card border */
+  background-color: #fff; /* White background for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add initial subtle shadow */
+  transition: box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+
+#blogs .card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.posts-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+  transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+.posts-section .row {
+  flex-wrap: nowrap;
+}
+
+.posts-section .col-md-6 {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+/* Add animation when scrolling */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.5s ease;
+}
+.read-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #dfbdbd; /* Change this to your desired background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.read-more-link:hover {
+  background-color: #a7a5a5; /* Darker shade of the background color */
+}
+
+.features-img {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  background: rgba(86, 90, 227, 0.1);
+  border-radius: 50% 0% 50% 50%;
+  text-align: center;
+}
+
+.features-img img {
+  width: 22px;
+}
+

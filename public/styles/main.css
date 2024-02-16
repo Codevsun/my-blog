@@ -39,7 +39,7 @@
 
 .hero-content {
   padding-top: 160px;
-  padding-bottom: 230px;
+  padding-bottom: 180px;
   text-align: center;
   font-family: "Kalnia", serif;
   font-family: "Playfair Display", serif;
@@ -223,3 +223,121 @@
   width: 22px;
 }
 
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #222222;
+}
+
+.row > * {
+  position: relative;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-sm {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.shadow {
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+.btn-success {
+  background: #a7a5a5;
+  border-color: #ffffff !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.focus,
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success .open > .dropdown-toggle.btn-primary {
+  background: #dfbdbd;
+  border-color: #f5f5f5;
+}
+
+.text-muted {
+  color: #959ea7 !important;
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0px;
+  position: relative;
+}
+.cta-box .cta-caption p {
+  width: 60%;
+}
+
+.cta-search .cta-icon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 34px;
+  transform: translateY(-50%);
+  padding-left: 10px;
+  color: #d9dce1;
+}
+
+.cta-search input {
+  padding: 22px 20px;
+  width: 100%;
+  color: #959ea7;
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+  outline: none !important;
+  padding-right: 180px;
+  padding-left: 70px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.cta-search input.form-control {
+  border: none;
+}
+
+.cta-search input.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #8a94c4;
+}
+
+.cta-search button {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  outline: none !important;
+  padding: 16px 22px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+.btn-lg {
+  padding: 12px 36px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.mm {
+  width: 80px;
+  height: 4px;
+  margin: 0 auto;
+}
+ul.list-group-flush li {
+  border: 0;
+}
+.card {
+  border-radius: 20px;
+}

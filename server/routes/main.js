@@ -2,8 +2,9 @@ import express from "express";
 import post from "../models/post.js";
 
 const router = new express.Router();
-router.get("/", (req, res) => {
-  res.render("index.ejs");
+router.get("/", async (req, res) => {
+  const posts = await post.find();
+  res.render("index.ejs", { post: posts });
 });
 router.get("/about", (req, res) => {
   res.render("about.ejs");

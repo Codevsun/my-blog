@@ -59,7 +59,13 @@
 
 <body>
   <main>
-    <div class="container" style="font-family: 'Times New Roman', Times, serif">
+    <div
+      class="container"
+      style="
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      "
+    >
       <h1
         style="
           margin-bottom: 50px;
@@ -76,19 +82,20 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="<%= post.imageUrl %>"
+              src="<%= post.ImageUrl %>"
               alt="<%= post.title %>"
             />
             <div class="card-body">
               <h5 class="card-title"><%= post.title %></h5>
               <p class="card-text"><%= post.body.substring(0, 100) %>...</p>
-              <a href="/postDetails/<%= post._id %>" class="read-more-link">Read More</a>
+              <a href="/postDetails/<%= post._id %>" class="read-more-link"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
         <% }); %>
       </div>
     </div>
-    
   </main>
 </body>

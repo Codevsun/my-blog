@@ -135,6 +135,7 @@
   </section>
 
   <!-- latest posts posts -->
+
   <section id="blogs" class="page-section">
     <div class="mm2">
       <div class="text-center"></div>
@@ -146,90 +147,43 @@
       >
         <hr class="featurette-divider" />
         <div class="row">
+          <% post.slice(0, 3).forEach(post => { %>
           <div class="col-md-6 col-lg-4 fade-in-right">
             <div class="tablet-lg-top-30">
               <div class="card my-3">
-                <img class="img-fluid" src="img/cutecats.jpg" alt="" />
+                <img
+                  class="img-fluid"
+                  src="<%= post.ImageUrl %>"
+                  alt="Post Image"
+                />
+
                 <div class="p-4">
-                  <h4 class="pb-2">Best design</h4>
+                  <h4 class="pb-2"><%= post.title %></h4>
                   <div
                     class="d-flex small pb-3 align-content-center text-body-tertiary"
                   >
                     <div class="pe-3 d-flex align-items-center">
                       <i class="lni lni-bookmark pe-1"></i>
-                      <span>Design</span>
+                      <span><%= post.Category %></span>
                     </div>
                     <div class="d-flex align-items-center">
                       <i class="lni lni-calendar pe-1"></i>
-                      <span>Jan 05, 2022</span>
+                      <% const date = new Date(post.createdAt); %>
+                      <span
+                        ><%= date.toLocaleString('en-US', { month: 'short', day:
+                        'numeric', year: 'numeric' }) %></span
+                      >
                     </div>
                   </div>
-                  <p class="pb-3 text-black-50">
-                    Quisque sit amet urna et neque porttitor mattis varius
-                    natoque. Vestibulum quis elit a lacus varius pretium vitae
-                    ut odio dapibus ac sit amet.
-                  </p>
-                  <a href="#" class="read-more-link">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 fade-in-right">
-            <div class="tablet-lg-top-30">
-              <div class="card my-3">
-                <img class="img-fluid" src="img/housecute.jpg" alt="" />
-                <div class="p-4">
-                  <h4 class="pb-2">How to draw</h4>
-                  <div
-                    class="d-flex small pb-3 align-content-center text-body-tertiary"
+                  <p class="pb-3 text-black-50"><%= post.description %></p>
+                  <a href="/postDetails/<%= post._id %>" class="read-more-link"
+                    >Read More</a
                   >
-                    <div class="pe-3 d-flex align-items-center">
-                      <i class="lni lni-bookmark pe-1"></i>
-                      <span>Design</span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <i class="lni lni-calendar pe-1"></i>
-                      <span>Jan 05, 2022</span>
-                    </div>
-                  </div>
-                  <p class="pb-3 text-black-50">
-                    Quisque sit amet urna et neque porttitor mattis varius
-                    natoque. Vestibulum quis elit a lacus varius pretium vitae
-                    ut odio dapibus ac sit amet.
-                  </p>
-                  <a href="#" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 fade-in-right">
-            <div class="tablet-lg-top-30">
-              <div class="card my-3">
-                <img class="img-fluid" src="img/cutecute.jpg" alt="" />
-                <div class="p-4">
-                  <h4 class="pb-2">Design Review</h4>
-                  <div
-                    class="d-flex small pb-3 align-content-center text-body-tertiary"
-                  >
-                    <div class="pe-3 d-flex align-items-center">
-                      <i class="lni lni-bookmark pe-1"></i>
-                      <span>Design</span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <i class="lni lni-calendar pe-1"></i>
-                      <span>Jan 05, 2022</span>
-                    </div>
-                  </div>
-                  <p class="pb-3 text-black-50">
-                    Quisque sit amet urna et neque porttitor mattis varius
-                    natoque. Vestibulum quis elit a lacus varius pretium vitae
-                    ut odio dapibus ac sit amet.
-                  </p>
-                  <a href="#" class="read-more-link">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <% }); %>
         </div>
       </div>
     </div>

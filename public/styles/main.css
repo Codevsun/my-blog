@@ -56,7 +56,7 @@
   margin-bottom: 30px;
 }
 
-.hero-buttons .btn-primary {
+.btn-primary {
   background-color: #f3f3f3; /* Beige color */
   border-color: #f3f3f3; /* Beige color */
   color: #212529; /* Text color */
@@ -192,7 +192,7 @@
 }
 
 .fade-in-right {
-  animation: fadeInRight 0.5s ease;
+  animation: fadeInRight 0.8s ease;
 }
 .read-more-link {
   display: inline-block;

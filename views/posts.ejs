@@ -1,0 +1,94 @@
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+
+  main {
+    padding: 50px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  /* CSS */
+  a {
+    color: rgb(109, 88, 88); /* Set the color of all links to black */
+  }
+
+  a:hover {
+    color: #333; /* Darken the color on hover */
+  }
+</style>
+
+<body>
+  <main>
+    <div class="container" style="font-family: 'Times New Roman', Times, serif">
+      <h1
+        style="
+          margin-bottom: 50px;
+          text-align: center;
+          color: rgb(85, 53, 53);
+          font-weight: bold;
+        "
+      >
+        Latest Blog Posts
+      </h1>
+      <div class="row">
+        <% posts.forEach(post => { %>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="<%= post.imageUrl %>"
+              alt="<%= post.title %>"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><%= post.title %></h5>
+              <p class="card-text"><%= post.body.substring(0, 100) %>...</p>
+              <a href="/postDetails/<%= post._id %>" class="read-more-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    
+  </main>
+</body>

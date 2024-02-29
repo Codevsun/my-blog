@@ -37,4 +37,8 @@ router.get("/postDetails/:postId", async (req, res) => {
   }
 });
 
+router.get("/addPost", (req, res) => {
+  res.render("addPosts.ejs");
+});
+
 export default router;

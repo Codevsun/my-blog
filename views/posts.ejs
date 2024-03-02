@@ -85,30 +85,33 @@
   <main>
     <div class="container">
       <div class="header-posts">
-      <div class="header-item-1"><h1
-        style="
-          font-family: Kalnia, serif;
-          font-family: Playfair Display, serif;
-          margin-bottom: 50px;
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-          font-family: Nunito;
-        "
-        class="fade-in-right"
-      >
-       
-        Discover More Stories
-      </h1></div>
-      <div class="header-item-2" > <a href="/addPost" class="add-post-btn">+ Add post</a></div>
-      <div class="header-item-3"> <hr class="featurette-divider" /></div>
-    </div>
+        <div class="header-item-1">
+          <h1
+            style="
+              font-family: Kalnia, serif;
+              font-family: Playfair Display, serif;
+              margin-bottom: 50px;
+              color: rgb(0, 0, 0);
+              font-weight: bold;
+              font-family: Nunito;
+            "
+            class="fade-in-right"
+          >
+            Discover More Stories
+          </h1>
+        </div>
+        <div class="header-item-2">
+          <a href="/addPost" class="add-post-btn">+ Add post</a>
+        </div>
+        <div class="header-item-3"><hr class="featurette-divider" /></div>
+      </div>
       <div class="row">
         <% posts.forEach(post => { %>
         <div class="col-md-6 col-lg-4 mb-4 fade-in-right">
           <div class="card">
             <img
               class="card-img-top"
-              src="<%= post.ImageUrl %>"
+              src="<%= post.imageUrl %>"
               alt="<%= post.title %>"
             />
             <div class="card-body">

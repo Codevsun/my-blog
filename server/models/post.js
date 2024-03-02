@@ -7,16 +7,16 @@ const PostSchema = new Schema({
 
   body: { type: "string", required: true },
 
-  ImageUrl: { type: "string", required: true },
+  imageUrl: { type: "string", required: true },
 
-  Category: { type: "string", required: true },
+  category: { type: "string", required: true },
 
   createdAt: {
     type: Date,
     default: Date.now,
   },
 
-  UpdatedAt: {
+  updatedAt: {
     type: Date,
     default: Date.now,
   },

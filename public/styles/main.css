@@ -342,3 +342,56 @@ ul.list-group-flush li {
   border-radius: 20px;
 }
 
+.header-posts {
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows */
+  grid-template-columns: auto auto; /* Two columns in the first row */
+}
+.header-item-1 {
+  grid-row: 1; /* First row */
+  grid-column: 1; /* First column */
+}
+.header-item-2 {
+  grid-row: 1; /* First row */
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-item-3 {
+  grid-row: 2; /* Second row */
+  grid-column: 1 / span 2; /* Span across both columns */
+}
+.form-group {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.error-section {
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  padding: 100px 0;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-code {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.error-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #5a5555;
+}
+
+.error-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #5a5555;
+  margin-bottom: 150px;
+}

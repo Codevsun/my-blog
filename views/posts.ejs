@@ -84,22 +84,24 @@
 <body class="hero-body">
   <main>
     <div class="container">
-      <h1
+      <div class="header-posts">
+      <div class="header-item-1"><h1
         style="
           font-family: Kalnia, serif;
           font-family: Playfair Display, serif;
           margin-bottom: 50px;
-          color: rgb(83, 19, 19);
+          color: rgb(0, 0, 0);
           font-weight: bold;
           font-family: Nunito;
         "
         class="fade-in-right"
       >
-        <a href="/addPost" class="add-post-btn">+</a>
+       
         Discover More Stories
-      </h1>
-      <hr class="featurette-divider" />
-
+      </h1></div>
+      <div class="header-item-2" > <a href="/addPost" class="add-post-btn">+ Add post</a></div>
+      <div class="header-item-3"> <hr class="featurette-divider" /></div>
+    </div>
       <div class="row">
         <% posts.forEach(post => { %>
         <div class="col-md-6 col-lg-4 mb-4 fade-in-right">

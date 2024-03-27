@@ -30,7 +30,7 @@ router.get("/postDetails/:postId", async (req, res) => {
   try {
     const postId = req.params.postId;
     const posts = await post.findById(postId);
-    res.render("postDetails.ejs", { posts });
+    res.render("postDetails.ejs", { posts });  
   } catch (error) {
     console.error(error);
   }
@@ -49,12 +49,12 @@ router.post("/addPost", async (req, res) => {
       imageUrl: req.body.image,
       category: req.body.category,
     });
-    const savedPost = await newPost.save();
+    const savedPost = await newPost.save(); //save to the database
     console.log(savedPost); // Optional: Log the saved post to the console
-    res.redirect("/");
+    res.redirect("/posts");
   } catch (error) {
     console.error(error);
-    res.status(500).send("Internal Server Error");
+    res.status(404).render("404");
   }
 });
 

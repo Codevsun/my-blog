@@ -145,10 +145,12 @@
           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         "
       >
-        <h2 style="margin-top: 150px">Latest Posts</h2>
+        <a href="/posts" style="text-decoration: none; color: black">
+          <h2 style="margin-top: 150px">Latest Posts</h2>
+        </a>
         <hr class="featurette-divider" />
         <div class="row">
-          <% post.slice(0, 3).forEach(post => { %>
+          <% post.slice(-3).reverse().forEach(post => { %>
           <div class="col-md-6 col-lg-4 fade-in-right">
             <div class="tablet-lg-top-30">
               <div class="card my-3">
